@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" role="img" aria-label="Terminal window showing tejas dadhich's profile">
+
+  <!-- Background -->
+  <rect width="800" height="430" rx="10" ry="10" fill="#0d1117"/>
+
+  <!-- Title bar -->
+  <rect width="800" height="44" rx="10" ry="10" fill="#161b22"/>
+  <rect y="22" width="800" height="22" fill="#161b22"/>
+
+  <!-- Traffic-light circles -->
+  <circle cx="24" cy="22" r="7" fill="#ff5f57"/>
+  <circle cx="48" cy="22" r="7" fill="#febc2e"/>
+  <circle cx="72" cy="22" r="7" fill="#28c840"/>
+
+  <!-- Title bar text -->
+  <text x="400" y="27" text-anchor="middle" dominant-baseline="middle"
+        font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13"
+        fill="#8b949e">tejas@github:~</text>
+
+  <!-- Separator line -->
+  <line x1="0" y1="44" x2="800" y2="44" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Terminal body text -->
+  <!-- Line 1: prompt + whoami -->
+  <text x="24" y="76" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#c9d1d9">
+    <tspan fill="#7ee787">$</tspan>
+    <tspan fill="#c9d1d9"> whoami</tspan>
+  </text>
+
+  <!-- Line 2: whoami output -->
+  <text x="24" y="97" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#c9d1d9">tejas dadhich (chopper)</text>
+
+  <!-- Blank line spacer: y=118 -->
+
+  <!-- Line 3: prompt + cat about.txt -->
+  <text x="24" y="125" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#c9d1d9">
+    <tspan fill="#7ee787">$</tspan>
+    <tspan fill="#c9d1d9"> cat about.txt</tspan>
+  </text>
+
+  <!-- Lines 4-6: about.txt output -->
+  <text x="24" y="146" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#c9d1d9">first-year cs (ai/ml) undergrad</text>
+  <text x="24" y="167" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#c9d1d9">dev head @ nex-cell entrepreneurship club</text>
+  <text x="24" y="188" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#c9d1d9">building agentic systems, one hackathon at a time</text>
+
+  <!-- Blank line spacer: y=209 -->
+
+  <!-- Line 7: prompt + cat hackathons.txt -->
+  <text x="24" y="216" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#c9d1d9">
+    <tspan fill="#7ee787">$</tspan>
+    <tspan fill="#c9d1d9"> cat hackathons.txt</tspan>
+  </text>
+
+  <!-- Lines 8-9: hackathons.txt output -->
+  <!-- vigil row -->
+  <text x="24" y="237" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13">
+    <tspan fill="#58a6ff">vigil</tspan>
+    <tspan fill="#8b949e">     multi-agent ai · railway anomaly detection · contributor</tspan>
+  </text>
+  <!-- lifelens row -->
+  <text x="24" y="258" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13">
+    <tspan fill="#58a6ff">lifelens</tspan>
+    <tspan fill="#8b949e">  top 10%, rank 43/424 · usaii global ai hackathon 2026</tspan>
+  </text>
+
+  <!-- Blank line spacer: y=279 -->
+
+  <!-- Line 10: prompt + cat stack.txt -->
+  <text x="24" y="286" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#c9d1d9">
+    <tspan fill="#7ee787">$</tspan>
+    <tspan fill="#c9d1d9"> cat stack.txt</tspan>
+  </text>
+
+  <!-- Lines 11-12: stack.txt output -->
+  <text x="24" y="307" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13">
+    <tspan fill="#8b949e">languages</tspan>
+    <tspan fill="#c9d1d9">   python, c++</tspan>
+  </text>
+  <text x="24" y="328" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13">
+    <tspan fill="#8b949e">interests</tspan>
+    <tspan fill="#c9d1d9">   agentic systems, multi-agent ai, competitive programming</tspan>
+  </text>
+
+  <!-- Blank line spacer: y=349 -->
+
+  <!-- Final prompt line with blinking cursor -->
+  <text x="24" y="364" font-family="Menlo, Consolas, 'Courier New', monospace" font-size="13" fill="#c9d1d9">
+    <tspan fill="#7ee787">$</tspan>
+    <tspan fill="#c9d1d9"> </tspan>
+  </text>
+
+  <!-- Blinking cursor block using SMIL animate on opacity -->
+  <rect x="37" y="351" width="8" height="15" fill="#c9d1d9">
+    <animate
+      attributeName="opacity"
+      values="1;1;0;0"
+      keyTimes="0;0.5;0.51;1"
+      dur="1s"
+      repeatCount="indefinite"/>
+  </rect>
+
+</svg>
