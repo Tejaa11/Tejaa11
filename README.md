@@ -30,7 +30,21 @@ One-line description + stack needed here. [`repo`](#)
 #### Student Admin Dashboard
 One-line description + stack needed here. [`repo`](#)
 
+
 ---
+
+### Contribution graph
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Tejaa11/Tejaa11/output/github-contribution-grid-snake.svg" alt="Contribution snake">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Tejaa11&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165">
+</p>
+
+---
+
 
 **`$ cat about.txt`**
 
