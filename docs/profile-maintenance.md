@@ -6,6 +6,8 @@
 
 The **Update Profile Assets** workflow (`.github/workflows/snake.yml`) generates light and dark contribution snakes and a GitHub stats card. The card uses public statistics through the automatic `GITHUB_TOKEN`; no personal access token or external hosting is needed.
 
+The stats card has animations disabled so its text is visible in static SVG previews. The contribution snake remains animated. Actions are pinned to reviewed commits and the stats renderer to an exact version; update these pins deliberately and verify the generated artifacts when upgrading.
+
 The workflow runs daily at 00:17 UTC (05:47 IST), on pushes to `main`, and manually from the Actions tab. Pull requests generate and validate images for review without publishing them. Download the `profile-assets` artifact from a successful run to preview all three SVGs.
 
 Only successful runs on `main` publish to the existing `output` branch. Publishing uses a normal Git push and preserves branch history and other files. The README loads images from that branch, so a failed generation leaves the last successful images available. Keep the `output` branch in place.

@@ -24,10 +24,12 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: Check out profile source
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Generate snake game SVG
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
           github_user_name: ${{ github.repository_owner }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -36,12 +38,13 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Generate public GitHub stats
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&disable_animations=true
           path: dist/github-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          core_version: "2.2.0"
           fail_on_error: "true"
 
       - name: Validate generated SVGs
@@ -63,7 +66,7 @@ jobs:
           PY
 
       - name: Save generated assets for review and publishing
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: profile-assets
           path: dist/*.svg
@@ -79,12 +82,12 @@ jobs:
       contents: write
     steps:
       - name: Check out existing output branch
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: output
 
       - name: Download validated assets
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: profile-assets
           path: generated
