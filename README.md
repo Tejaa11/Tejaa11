@@ -25,10 +25,10 @@ Citizen-science platform turning smartphone photos of urban plant leaves into hy
 Stack: React.js, Tailwind CSS, Google Gemini Vision API, Firebase Firestore, Leaflet.js, Vercel. Core differentiator: an XGBoost + SHAP fusion layer combining leaf-damage classification with stomatal aperture data — also the basis of a patent claim.
 
 #### Stockroom
-One-line description + stack needed here. [`repo`](#)
+In progress — repository and project details coming soon.
 
 #### Student Admin Dashboard
-One-line description + stack needed here. [`repo`](#)
+In progress — repository and project details coming soon.
 
 
 ---
@@ -36,11 +36,17 @@ One-line description + stack needed here. [`repo`](#)
 ### Contribution graph
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Tejaa11/Tejaa11/output/github-contribution-grid-snake.svg" alt="Contribution snake">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Tejaa11/Tejaa11/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Tejaa11/Tejaa11/output/github-contribution-grid-snake.svg">
+    <img src="https://raw.githubusercontent.com/Tejaa11/Tejaa11/output/github-contribution-grid-snake.svg" alt="Animated snake following Tejas's GitHub contributions">
+  </picture>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Tejaa11&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165">
+  <a href="https://github.com/Tejaa11?tab=overview">
+    <img src="https://raw.githubusercontent.com/Tejaa11/Tejaa11/output/github-stats.svg" alt="Tejas's public GitHub statistics" width="467" height="195">
+  </a>
 </p>
 
 ---
